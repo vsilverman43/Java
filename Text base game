@@ -1,0 +1,53 @@
+import java.util.Scanner;
+import class RandomSelect{
+
+public class Main {
+    public static int health = 100;
+    public static int score = 0;
+    public static int melee = 1;
+    public static int defence = 1;
+    public static int damage;
+    public static int damagemelee = 1;
+    public static int damagespell = 1;
+    public static int spellz = 1;
+    public static int healz= 1;
+
+    public static void main( String[] args ){
+    
+        Scanner keyboard = new Scanner(System.in);
+
+        //class strings
+String Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard;
+int x;
+
+//Places
+
+String Emerald_City, Sapphire_City, Royal_City, Sanguine_City;
+int y;
+
+//Intro
+System.out.println("Hello there, and welcome to dis game");
+System.out.println("Select a class");
+System.out.println("1 = Barbarian, 2 = Bard, 3 = Cleric, 4 = Druid, 5 = Fighter, 6 = Monk, 7 = Paladin, 8 = Ranger, 9 = Rogue, 10 = Sorcerer, 11 = Warlock, 12 = Wizard ");
+x = keyboard.nextInt();
+
+if( x = 1){
+//barb
+    health = health + 100;
+    melee = melee + 3;
+    damage = melee + damagemelee;
+
+}
+if( x = 2){
+//bard
+    damage = melee + damagemelee;
+    spellz = spellz + 1;
+    
+}
+if( x = 3){
+//cleric
+    health = health - 25;
+    
+    damage = melee + damage;
+}
+}
