@@ -5,12 +5,17 @@ public class Main {
     public static int health = 100;
     public static int score = 0;
     public static int melee = 1;
+    public static int range = 1;
     public static int defence = 1;
     public static int damage;
     public static int damagemelee = 1;
+    public static int damagerange = 1;
     public static int damagespell = 1;
     public static int spellz = 1;
     public static int healz= 1;
+    public static int randomNum = (int)(Math.random() * 20 + 1); // 0 to 20
+
+
 
     public static void main( String[] args ){
     
@@ -18,7 +23,7 @@ public class Main {
 
         //class strings
 String Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard;
-int x;
+int x = 1;
 
 //Places
 
@@ -31,23 +36,53 @@ System.out.println("Select a class");
 System.out.println("1 = Barbarian, 2 = Bard, 3 = Cleric, 4 = Druid, 5 = Fighter, 6 = Monk, 7 = Paladin, 8 = Ranger, 9 = Rogue, 10 = Sorcerer, 11 = Warlock, 12 = Wizard ");
 x = keyboard.nextInt();
 
-if( x = 1){
+//case for choosing the player class
+switch(x){
+
+case 1:
 //barb
     health = health + 100;
     melee = melee + 3;
     damage = melee + damagemelee;
 
-}
-if( x = 2){
+    System.out.println("You have selected Barbarian")
+    break;
+
+case 2:
 //bard
     damage = melee + damagemelee;
     spellz = spellz + 1;
     
-}
-if( x = 3){
+    break;
+
+case 3:
 //cleric
     health = health - 25;
-    
+    spellz = spellz + 2;
+    healz = healz + 3;
     damage = melee + damage;
+
+    break;
+case 4:
+    //Druid
+    health = health - 25;
+    damage = melee + damage;
+
+    break;
+case 5:
+    //fighter
+    health = health + 50;
+    melee = melee + 2;
+    damage = melee + damage;
+
+    break;
+case 6:
+//monk
+    health = health -50;
+    melee = 
+
+
+
+
 }
 }
